@@ -31,7 +31,7 @@ def update
         redirect_to @doc
     else
         render 'edit'
-    end            
+    end             
 end 	
 
 def destroy
