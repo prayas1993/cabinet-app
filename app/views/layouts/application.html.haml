@@ -1,3 +1,4 @@
+!!!
 %html
 %head 
   %title Filecabinet
@@ -8,7 +9,7 @@
 %body
   %header
     .header_inner    
-      = link_to "FileCabinet", root_path
+      = link_to "FileCabinet", root_path ,id: "logo"
 
       %nav
         - if user_signed_in?
@@ -16,8 +17,6 @@
           = link_to "Sign Out"  , destroy_user_session_path, method: :delete
         - else
           = link_to "SignIn"    , new_user_session_path
-    
- 
   %p.notice= notice
   %p.alert=  alert 
 
